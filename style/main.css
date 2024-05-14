@@ -1,0 +1,487 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.woff);
+}
+@font-face {
+    font-family: Philosopher;
+    src: url(../fonts/Philosopher-Bold.woff);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+/* navbar start */
+.header{
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background: #ffffff;
+}
+.navbar{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__collection{
+    display: flex;
+    gap: 41px;
+    list-style: none;
+    color:  #150C01;
+    padding-left: 35px;
+    flex: 1;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar__item:hover{
+    color:  #DC780B;
+    
+}
+.navbar__btn{
+    width: 155px;
+    height: 46px;
+    background: #DC780B;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    font-family: Roboto;
+    transition: 0.9s;
+    cursor: pointer;
+    box-shadow: 0 0 0 5px;
+    outline: none;
+}
+.navbar__btn:hover{
+    background: #d99f76;
+}
+/* navbar end */
+
+/* hero start */
+.hero{
+    display: flex;
+    margin-top: 16px;
+}
+.hero__text{
+    width: 50%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 160px;
+}
+.hero__image{
+    width: 50%;
+    height: 360px;
+
+}
+.hero__image img{
+    width: 100%;
+}
+.hero__title{
+    font-size: 49px;
+    color: #150C01;
+    font-family: Philosopher;
+} 
+.hero__text p{
+    font-size: 16px;
+    font-family: Roboto;
+}
+.hero__btns{
+    display: flex;
+    gap: 30px;
+}
+.hero__btn{
+    width: 150px;
+    height: 60px;
+    background: transparent;
+    color: #DC780B;
+    font-size: 16px; 
+    border: 1px solid #DC780B;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: 0 0 4px;
+}
+.hero__btn:hover{
+    background: #DC780B;
+    color: #fff;
+}
+/* hero end */
+
+
+/* box start */
+.box{
+    margin-top: 145px;
+}
+.features{
+    width: 100%;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.features__title{
+    display: flex;
+    color: #DC780B;
+    justify-content: center;
+}
+.features__title:hover{
+    color: #d3a97c;
+    cursor: pointer;
+    transition: .1s;
+}
+.features__text{
+    justify-content: center;
+    display: flex;
+    font-size: 31.25px; 
+    font-family: Philosopher; 
+}
+.features__text:hover{
+    cursor: pointer;
+    transition: .1s;
+    color: #dc780b;
+}
+.wrapper__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 228px;
+    transition: 0.9s;
+}
+.wrapper__image:hover{
+    cursor: pointer;
+   
+   
+}
+.card__img{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin-bottom: 33px;
+}
+.wrapper__box__item{
+    width: 100%;
+    height: 107px;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.box__title{
+    font-size: 25px;
+    font-family: Philosopher;
+}
+.box__title:hover{
+    cursor: pointer;
+    transition: .1s;
+    color: #dc780b;
+}
+.wrapper__box__text{
+    width: 100%;
+    margin-top: 15px;
+    color: #150C01;
+    font-family: Roboto;
+    opacity: 70%;
+}
+
+/* box end  */
+
+/* about us start */
+.food__stalls{
+    display: flex;
+}
+
+.about__us{
+    margin-top: 123.73;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 123px;
+}
+
+.about__us__box{
+    width: 50%;
+    height: 500px;
+    display: flex;
+}
+
+.about__us__box__image{
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.about__us__box__image:hover{
+    cursor: pointer; 
+}
+
+.about__us__box__right{
+    width: 50%;
+    height: 500px;
+}
+.about__us__samall__box{
+    margin: 93.27px 92px;
+}
+.about__us__small__title{
+    color: #DC780B ;
+    font-family: Roboto;
+}
+.about__us__title{
+    font-size: 32px;
+    font-family: Philosopher;
+}
+.about__us__title:hover{
+    cursor: pointer;
+    transition: 0.8s;
+    color: #DC780B;
+}
+.about__us__text{
+    margin-top: 30px;
+    color: #150C01;
+    font-family: Roboto;
+    opacity: 70%;
+}
+.about__us__text:hover{
+    color: #bd7800;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.about__us__btn{
+    width: 142px;
+    color: #fff;
+    height: 42px;
+    margin-top: 29px;
+    font-family: Roboto;
+    background: #DC780B;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.about__us__btn:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    background: #eab57d;
+}
+/* about us end */
+
+
+.title__menu{
+    text-align: center;
+    margin-top: 115px;
+}
+.menu__title:hover{
+    cursor: pointer;
+    
+    color: #f8a64e;
+}
+.text__menu{
+    color: #DC780B;
+}
+.menu__title{
+    font-size: 31.25px;
+}
+.texts{
+    color: #150C01;
+    margin-top: 25px;
+    text-align: center;
+    width: 740px;
+}
+.menu__text:hover{
+    cursor: pointer;
+    color: #DC780B;
+}
+
+.big__card{
+    display: flex;
+    width: 100%;
+    
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card__image{
+    width: 100%;
+    border-radius: 50px 5px 50px 0;
+}
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 50px;
+}
+.price{
+    font-size: 20px; 
+    margin-top: 10px;
+}
+.price:hover{
+    cursor: pointer;
+    color: #DC780B;
+}
+.card__text{
+    padding: 25px 25px;
+}
+.card__text:hover{
+    cursor: pointer;;
+    color: #DC780B;
+}
+.card__btn{
+    display: flex;
+    padding-right: 25px;
+}
+.price__btn{
+    padding-bottom: 5px;
+    margin: 0 0  25px 25px;
+    border-radius: 5px;
+    border: none;
+    background: #DC780B;
+    font-size: 20px;
+    color: #fff;
+    width: 36px;
+    height: 34px;
+}
+.price__btn:hover{
+    cursor: pointer;
+    background: #f8a64e;
+}
+.card__star{
+    width: 16px;
+    height: 15px;
+}
+.card__star:hover{
+    cursor: pointer;
+    background: #f8a64e;
+}
+.star{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 8px;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 20px;
+}
+.more__bton{
+     width: 142px;
+     height: 42px;
+     border: 1px solid #fae6d0;
+     background: #fff;
+     color: #DC780B;
+     border-radius: 5px;
+}
+.more__bton:hover{
+    cursor: pointer;
+    transition: .1s;
+    background: #d3a97c;
+}
+
+/* conatact start */
+.contact{
+    width: 100%;
+    height: 448px;
+    background: #FBF1E7;
+    padding-top: 115px;
+}
+.contact__top{
+    font-size: 25px;
+    padding-bottom: 30px;
+    color: #DC780B;
+    font-family: Roboto;
+    opacity: 70%;
+    
+}
+.contact h3{
+    font-size: 31.25px;
+    font-family: Philosopher;
+    padding-bottom: 46px;
+}
+.contact__input{
+    width: 750px;
+    height: 75px;
+    outline: none;
+    border-radius: 10px;
+    
+}
+.conatct__btns  ::placeholder{
+    font-size: 16px;
+}
+.conatct__btn{
+    width: 156px;
+    height: 75px;
+    background: #DC780B;
+    color: #fff;
+    font-size: 18px;
+    font-family: Roboto;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.conatct__btn :hover{
+    color: #eab57d;
+    
+}
+ /* contact end */
+
+ /* footer start */
+.footer{
+    width: 100%;
+    padding: 10px;
+    background: #252525;
+    padding: 17px;
+       
+}
+.footer___wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 18%;
+}
+.footer__collection{
+    list-style: none;
+    color : #fff;
+    opacity: 70%;
+    font-size: 16px;
+    gap: 12px;
+    cursor: pointer;
+    line-height: 3;
+}
+.foter__item h3{
+    color: #ffffff;
+    cursor: a;
+    font-family: Philosopher;
+    padding-bottom: 26px;
+    font-size: 19px;
+}
+.footer__collection :hover{
+    color: #eab57d;
+}
+.footer__logo{
+    cursor: pointer;
+    width: 61px;
+    height: 60px;
+}
+/* footer end */
